@@ -28,3 +28,23 @@ A big plus would be to provide a way (Ansible, docker, etc.) to easily deploy th
 Another plus would be to provide the backend with a database where previous searches are stored.
 
 Thinking of something else that would be very cool? do it!
+
+# Technology Requirements
+### Frontend 
+    - Stack: Django, Flask, Vue, Angular, React, or other framework.
+    - UI: Ordered list (minimum) or table/ beautiful chart
+    - Advantages: Any idea on showing a good dashboard with many useful visualisation
+
+### Backend 
+    - Stack: Python (Django, Flask, …), Lambda
+    - Outcome: API work well with good documentation 
+    - Advantages: Cache or DB, ….
+
+### Repository 
+    - Well arranged
+    - Build & Deploy
+    - Docker, Docker-Compose, Makefile
+
+### Documentation 
+    - At least how to run
+    - How to work on …
