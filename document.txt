@@ -1,0 +1,50 @@
+Application Documentation
+-------------------------
+
+Introduction:
+--------------
+This document provides information about the application, its key features, and the technologies used.
+
+Frontend:
+---------
+- Language: TypeScript
+- Library: ReactJS
+- Build Tool: Vite
+
+Backend:
+--------
+- Language: Python
+- Framework: FastAPI
+- Database: SQLite
+
+Features:
+---------
+- A search box for typing a URL
+- Error handling with notifications
+- Results displayed in a paginated table
+- API documentation
+- Stores the previous search URLs
+- Validates the URL in the query parameters
+- A RESTful API that counts the top 100 words based on the provided URL
+
+How to Run:
+-----------
+- Ensure that Docker (latest version) is installed on your machine.
+- Ensure that ports 80 and 8000 are available.
+- From the root folder, run the following command to start the application: `docker-compose -p app up --detach`
+- Open your browser and enter the URL http://localhost to access the application.
+
+Suggestions:
+------------
+- You can use a third-party library like Elasticsearch for better search performance.
+- Consider using Redis for caching. For example, you can cache the URL and its result in Redis to reduce the number of database queries.
+
+Note:
+-----
+- The backend is currently running in the development environment.
+- If your machine is Intel-based, please modify the Dockerfile in the `client` directory (`arm64v8/node:18-alpine` -> `node:18-alpine`) and the Dockerfile in the `server` directory (`arm64v8/python:3.11.4-alpine` -> `python:3.11.4-alpine`) for better performance.
+- The result of counting the top 100 words on a website may differ from manually counting using Ctrl + F on that website.
+- Go to http://localhost:8000 to access the API documentation and explore the available endpoints.
+- If you encounter any issues, please feel free to contact me via Zalo at 0931335283 or Email me at dinhhuy112233@gmail.com.
+
+Thank You
